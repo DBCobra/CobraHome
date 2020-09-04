@@ -32,8 +32,7 @@ Setup Cobra's environment variables (for example, `$COBRA_HOME`):
 
     $ . ./env.sh
 
-<!-- You need to run this command before *each* run of Cobra. -->
-<!-- XXX: is that right? and what does a ``run'' mean? -->
+Cobra verifier and bench will use these environment variables.
 
 Run Cobra
 ---
