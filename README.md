@@ -26,8 +26,7 @@ Cobra verifier requires [CUDA](https://developer.nvidia.com/cuda-zone). One need
 
 Fetch Cobra's components into this root folder:
 
-    $ git submodule init
-    $ git submodule update
+    $ git submodule update --init --recursive
 
 Update Cobra's environment variables:
 

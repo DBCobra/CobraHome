@@ -4,6 +4,3 @@
 [submodule "CobraBench"]
 	path = CobraBench
 	url = git@github.com:DBCobra/CobraBench.git
-[submodule "CobraLogs"]
-	path = CobraLogs
-	url = git@github.com:DBCobra/CobraLogs.git
