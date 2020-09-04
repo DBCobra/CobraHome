@@ -1,10 +1,10 @@
 # Cobra Home
 
-This is the root directory of a (research) project, Cobra.
+This is the root directory of a research project, Cobra.
 Cobra studies verifying [serializability](https://en.wikipedia.org/wiki/Serializability) of black-box databases.
 It includes two components:
 
-* [Cobra verifier](https://github.com/DBCobra/CobraVerifier): a piece of software that checks serializability of a set of transactions (called _history_)
+* [Cobra verifier](https://github.com/DBCobra/CobraVerifier): checks serializability of a set of transactions (called a _history_)
 * [Cobra bench](https://github.com/DBCobra/CobraBench): database clients that interact with a black-box database and generate histories
 
 Prepare environment
@@ -12,11 +12,11 @@ Prepare environment
 
 ### Step 0: install required packages
 
-Cobra requires Java v1.8.0 (or higher). One needs to install the Java environment and update the following `JAVA_HOME` in the file `env.sh`:
+Cobra requires Java v1.8.0 (or higher). After you install the Java environment, update `JAVA_HOME` in the file `env.sh`:
 
     export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
-Cobra verifier requires [CUDA](https://developer.nvidia.com/cuda-zone). One needs to install CUDA and update the following environment variable in the file `env.sh`:
+Cobra verifier requires [CUDA](https://developer.nvidia.com/cuda-zone). After you install CUDA, update `CUDA_PATH` in the file `env.sh`:
 
     export CUDA_PATH="/usr/local/cuda"
 
@@ -28,12 +28,12 @@ Fetch Cobra components:
 
     $ git submodule update --init --recursive
 
-Setup Cobra's environment variables:
+Setup Cobra's environment variables (for example, `$COBRA_HOME`):
 
     $ . ./env.sh
 
-The above command sets several environment variables (for example, `$COBRA_HOME`) that Cobra components use. One needs to run this command every time before running Cobra.
-
+<!-- You need to run this command before *each* run of Cobra. -->
+<!-- XXX: is that right? and what does a ``run'' mean? -->
 
 Run Cobra
 ---
