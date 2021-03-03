@@ -30,7 +30,7 @@ Fetch Cobra components:
 
 Setup Cobra's environment variables (for example, `$COBRA_HOME`):
 
-    $ . ./env.sh
+    $ source ./env.sh
 
 Cobra verifier and bench will use these environment variables.
 
