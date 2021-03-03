@@ -16,7 +16,10 @@ Cobra requires Java v1.8.0 (or higher). After you install the Java environment, 
 
     export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
-Cobra verifier requires [CUDA](https://developer.nvidia.com/cuda-zone). After you install CUDA, update `CUDA_PATH` in the file `env.sh`:
+Cobra verifier requires [CUDA](https://developer.nvidia.com/cuda-zone) v10.0 (or higher),
+[cuBLAS](https://developer.nvidia.com/cublas), and
+[cuSPARSE](https://developer.nvidia.com/cusparse).
+After you install CUDA, update `CUDA_PATH` in the file `env.sh`:
 
     export CUDA_PATH="/usr/local/cuda"
 
